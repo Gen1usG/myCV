@@ -2,458 +2,492 @@
 <html lang="zh">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <title>我的简历</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>钟淑源的简历</title>
+    <script src="//at.alicdn.com/t/font_1815305_mwieh1y9gdr.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    body {
-      background: #eee;
-      margin: 20px 0;
-    }
+        body {
+            background: #eee;
+            margin: 20px 0;
+        }
 
-    article {
-      width: 21cm;
-      min-height: 29.7cm;
-      background: white;
-      margin: 0 auto;
-      overflow: auto;
-      padding: 1em;
-    }
-  </style>
-  <style media="print">
-    body {
-      margin: 0;
-    }
+        article {
+            width: 21cm;
+            min-height: 29.7cm;
+            background: white;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 1em;
+        }
+    </style>
+    <style media="print">
+        body {
+            margin: 0;
+        }
 
-    .page2 {
-      page-break-before: always;
-      margin-top: 30px;
-    }
-  </style>
-  <style>
-    body {}
+        .page2 {
+            margin-top: 30px;
+        }
+        .break{
+            page-break-before: always;
+        }
+    </style>
+    <style>
+        body {
+        }
 
-    p {
-      margin: .3em 0;
-    }
+        p {
+            margin: .3em 0;
+        }
 
-    h1 {
-      font-size: 25px;
-      margin-top: 0;
-    }
+        h1 {
+            font-size: 25px;
+            margin-top: 0;
+        }
 
-    h4,
-    h5,
-    h6 {
-      font-weight: normal;
-    }
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
 
-    ol,
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+        ol,
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-    strong {
-      font-weight: normal;
-      color: #f60;
-    }
+        strong {
+            font-weight: normal;
+            color: #f60;
+        }
 
-    a {
-      color: #999;
-      text-decoration: none;
-      border-bottom: 1px solid;
-    }
+        a {
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
 
-    p,
-    li {
-      color: #666;
-    }
+        p,
+        li {
+            color: #444;
+        }
 
-    strong {
-      font-weight: normal;
-    }
+        strong {
+            font-weight: normal;
+        }
 
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
-    }
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
 
-    .bio {
-      position: relative;
-    }
+        .bio {
+            position: relative;
+        }
 
-    .bio img {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  </style>
+        .bio img {
+            position: absolute;
+            top: 0;
+            right: 30px;
+        }
 
-  <style>
-    .projects {}
+        .bio p {
+            margin-top: 20px;
+            font-size: 17px;
+        }
 
-    .projects p {
-      color: #666;
-    }
+        .bio a {
+            font-size: 17px;
+            color: #666;
+        }
 
-    .projects strong {
-      color: #f60;
-    }
+        .bio .contact{
+            border-bottom: none;
+        }
 
-    .projects>ol {
-      margin-top: 0;
-      list-style-position: inside;
-      padding: 0;
-    }
+        .bio span {
+            padding-right: 20px;
+        }
+    </style>
 
-    .projects>ol>li {
-      margin-bottom: 24px;
-    }
+    <style>
+        .projects {
+        }
 
-    .projects>ol>li>header {
-      display: flex;
-      justify-content: space-between;
-    }
+        .projects p {
+            color: #444;
+        }
 
-    .projects>ol>li h3 {
-      display: inline-block;
-    }
-  </style>
-  <style>
-    .skills {}
+        .projects strong {
+            color: #f60;
+        }
 
-    #skills {
+        .projects > ol {
+            margin-top: 0;
+            list-style-position: inside;
+            padding: 0;
+        }
 
-      width: 500px;
-      height: 270px;
-    }
+        .projects > ol > li {
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
 
-    .skills>.wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
+        .projects > ol > li > header {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    .skills>.wrapper>:first-child {
-      margin-right: 24px;
-    }
+        .projects > ol > li h3 {
+            display: inline-block;
+        }
 
-    .skills>.wrapper>#skills {}
+        .projects h4 {
+            margin-top: 20px;
+        }
+    </style>
 
-    .skills>.wrapper>ul {
-      color: #666;
-    }
+    <!--skills-->
+    <style>
+        .skills {
+        }
 
-    .skills>.wrapper strong {
-      color: #f60;
-    }
+        #skills {
 
-    .skills>.wrapper>ul>li {
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-  </style>
-  <style>
-    .openSource {}
+            width: 500px;
+            height: 270px;
+        }
 
-    .openSource>h2 {}
+        .skills > .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .openSource header img {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+        .skills > .wrapper > :first-child {
+            margin-right: 24px;
+        }
 
-    .openSource>ul {}
+        .skills > .wrapper > #skills {
+        }
 
-    .openSource>ul>li {
-      margin-bottom: 24px;
-    }
+        .skills > .wrapper > ul {
+            color: #666;
+        }
 
-    .openSource header {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-    }
+        .skills > .wrapper strong {
+            color: #f60;
+        }
 
-    .openSource h3 {}
-  </style>
-  <style>
-    .jobs {}
+        .skills > .wrapper > ul > li {
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+    </style>
+    <style>
+        .openSource {
+        }
 
-    .jobs>h2 {}
+        .openSource > h2 {
+        }
 
-    .jobs>ol {}
+        .openSource header img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
 
-    .jobs>ol>li {
-      margin: 12px 0;
-    }
+        .openSource > ul {
+        }
 
-    .jobs header {
-      display: flex;
-      color: #666;
-      margin-bottom: 12px;
-    }
+        .openSource > ul > li {
+            margin-bottom: 24px;
+        }
 
-    .jobs header>h3 {
-      font-size: 18px;
-      color: #333;
-    }
+        .openSource header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
 
-    .jobs header>h4 {
-      margin-left: 1em;
-      font-size: 18px;
-    }
+        .openSource h4 {
+            margin-top:20px;
+        }
+    </style>
+    <style>
+        .jobs {
+        }
 
-    .jobs header>span {
-      font-size: 18px;
-      margin-left: auto;
-    }
-  </style>
+        .jobs > h2 {
+        }
+
+        .jobs > ol {
+        }
+
+        .jobs > ol > li {
+            margin: 12px 0;
+        }
+
+        .jobs header {
+            display: flex;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .jobs header > h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .jobs header > h4 {
+            margin-left: 1em;
+            font-size: 18px;
+        }
+
+        .jobs header > span {
+            font-size: 18px;
+            margin-left: auto;
+        }
+    </style>
+    <style>
+        .education {
+            margin-top: 40px;
+        }
+
+    </style>
 
 
+    <style>
+        @media (max-width: 500px) {
+            body {
+                margin: 0;
+            }
 
-  <style>
-    @media (max-width: 500px) {
-      body {
-        margin: 0;
-      }
+            article {
+                width: auto;
+                height: auto;
+            }
 
-      article {
-        width: auto;
-        height: auto;
-      }
+            .bio img {
+                display: none;
+            }
 
-      .bio img {
-        display: none;
-      }
+            .skills .wrapper {
+                flex-direction: column;
+            }
 
-      .skills .wrapper {
-        flex-direction: column;
-      }
+            #skills {
+                width: auto;
+            }
 
-      #skills {
-        width: auto;
-      }
-      .jobs header{
-        flex-direction: column;
-      }
-      .jobs header >h3,
-      .jobs header >h4,
-      .jobs header >span {
-        margin: 0;
-      }
-    }
-  </style>
+            .jobs header {
+                flex-direction: column;
+            }
+
+            .jobs header > h3,
+            .jobs header > h4,
+            .jobs header > span {
+                margin: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <article>
+<article>
     <section class="bio">
-      <h1>方应杭</h1>
-      <img src="https://pic2.zhimg.com/v2-d206f673b1e7b8a7e3b31bc8041e05e2_xll.jpg" alt="" width="100" height="100">
-      <p>
-        男 | 30岁 | 前端开发工程师 | 杭州
-      </p>
-      <p>
-        手机：13812345678 | 微信：frank_fang | 邮箱：fangyinghang@foxmail.com
-      </p>
+        <h1>
+            <span>钟淑源</span>
+            <svg class="icon" aria-hidden="true" fill="#000">
+                <use href="#icon-github"></use>
+            </svg>
+            <a href="https://github.com/Gen1usG">Github</a>
+            <svg class="icon" aria-hidden="true" fill="#000">
+                <use href="#icon-juejin"></use>
+            </svg>
+            <a href="https://juejin.im/user/5d694662f265da03b31be49e/posts">个人博客</a>
+        </h1>
+        <img src="./images/blue.jpg" alt="" height="150">
+        <p>
+            男 | 25岁 | 前端开发工程师 | 珠海
+        </p>
+        <p>
+            手机：<a class="contact" href="tel:15626487753">15626487753</a> | 微信：zz812487021 | 邮箱：<a class='contact' href="mailto:812487021@qq.com">812487021@qq.com</a>
+        </p>
     </section>
-
-
-
-
-
-
-    <section class="projects">
-      <h2>项目经历</h2>
-      <ol>
-        <li>
-          <header>
-            <h3>谷UI</h3>
-            <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
-            </span>
-          </header>
-          <p>
-            一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
-
-          </p>
-          <p>
-            主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
-
-          </p>
-          <p>
-            已被公司前端同事广泛使用，有效提高前端团队的开发效率。
-
-          </p>
-          <p>
-            制作过程让我对 TypeScript 和单元测试有了新的认识。
-            我将其总结成了一篇博客《TS 泛型的使用》。
-          </p>
-        </li>
-        <li>
-          <header>
-            <h3>写代码啦.com</h3>
-            <span>
-              <a href="#">源码私有</a>
-              <a href="#">项目预览</a>
-            </span>
-          </header>
-          <p>
-            这是一个基于 <strong>Rails</strong> 和 <strong>Vue</strong> 的多页面应用。
-          </p>
-          <p>
-            主要功能包括微信登录、手机验证、直播、点播、反盗版、答题系统、课程管理系统等。
-            从数据库设计到前端展示，都是由我主导，另有两名前端辅助我。
-          </p>
-          <p>
-            该系统<strong>大幅提高教学效率</strong>，优化教学流程，受到公司和用户的好评。
-          </p>
-        </li>
-        <li>
-          <header>
-            <h3>旺财记账</h3>
-            <span>
-              <a href="#">源码私有</a>
-              <a href="#">项目预览</a>
-            </span>
-          </header>
-          <p>
-            一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
-          </p>
-
-          <p>
-            这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
-            而且可以通过图表查看自己的消费习惯。
-          </p>
-          <p>
-            该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
-          </p>
-        </li>
-      </ol>
+    <section class="education">
+        <h2>教育经历</h2>
+        <p>
+            <span><time>2014年</time>~<time>2018年</time></span>
+            <span>暨南大学  本科</span>
+            <span style="margin-left: 20px">英语等级：</span>
+            CET-4
+        </p>
     </section>
-
-
-
-
 
     <section class="skills">
-      <h2>技能</h2>
-      <div class="wrapper">
-        <div id="skills"></div>
-        <ul>
-          <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
-          <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
-          <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-          <li>熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等</li>
-          <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
-          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
-          <li>了解 <strong>Webpack 的配置和优化</strong></li>
-        </ul>
-      </div>
+        <h2>技能</h2>
+        <div class="wrapper">
+            <div id="skills"></div>
+            <ul>
+                <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong></li>
+                <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+                <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                <li>掌握<strong>React</strong>，包括 React组件，React Hooks</li>
+                <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+                <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+                <li>了解 <strong>Webpack 的配置和优化</strong></li>
+            </ul>
+        </div>
     </section>
 
+    <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+            <li>
+                <header>
+                    <h3>旺财记账</h3>
+                    <span>
+                      <a href="https://github.com/Gen1usG/Ledger">源码预览</a>
+                      <a href="https://gen1usg.github.io/ledger-website">项目预览</a>
+                    </span>
+                </header>
+                <h4 style="font-weight: bold">简介：</h4>
+                <p>
+                    一个基于 <strong>Vue</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+                </p>
+
+                <p>
+                    这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+                </p>
+                <h4 style="font-weight: bold">项目细节：</h4>
+
+                <p>整体使用<strong>Vue+Webpack+TypeScript</strong>构建项目。</p>
+                <p>使用<strong>SVG</strong>代替传统的幽灵图作为icons，并使用Webpack实现文件导入<strong>工程化</strong>。</p>
+                <p>使用<strong>Vue Router</strong>实现路由的跳转。</p>
+                <p>使用<strong>VueX</strong>实现全局状态管理。</p>
+                <p>使用<strong>mixins</strong>及<strong>单文件组件</strong>优化代码的可读性。</p>
+
+            </li>
+            <li class="break">
+                <header>
+                    <h3>豆瓣APP</h3>
+                    <span>
+                      <a href="https://github.com/Gen1usG/douBan">源码预览</a>
+                      <a href="https://gen1usg.github.io/douBan/">项目预览</a>
+                    </span>
+                </header>
+                <h4 style="font-weight: bold">简介：</h4>
+                <p>
+                    一个基于 <strong>原生JS</strong> 的移动端豆瓣电影推荐应用。
+                </p>
+                <h4 style="font-weight: bold">项目细节：</h4>
+
+                <p>项目整体使用<strong>JS+jQuery</strong>构建。</p>
+                <p>使用jQuery封装的<strong>ajax</strong>跨域请求数据。</p>
+                <p>使用模板及内容和属性替换实现节点的自动创建</p>
+                <p>通过已获取数据的数量，以及页面触底实现<strong>懒加载</strong>。</p>
+                <p>使用<strong>font-class</strong>引入图标，并通过<strong>css3 animation</strong>实现加载图标的动画。</p>
+            </li>
+        </ol>
+    </section>
 
 
     <section class="openSource">
-      <h2>开源项目</h2>
-      <ul>
-        <li>
-          <header>
-            <h3>自己写的 DOM 库</h3>
-            <a href="#">源码链接</a>
-          </header>
-          <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
-        </li>
-        <li class="page2">
-          <header>
-            <h3>会动的哆啦A梦</h3>
-            <span>
-              <a href="#">源码链接</a>
-              <a href="https://fangyinghang.com/make-a-pikachu/">项目预览</a>
-            </span>
-          </header>
-          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
-        </li>
-        <li>
-          <header>
-            <h3>简易画板</h3>
-            <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
-            </span>
-          </header>
-          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
-        </li>
-      </ul>
-    </section>
+        <h2>开源项目</h2>
+        <ul>
+            <li class="page2">
+                <header>
+                    <h3>Canvas小画板</h3>
+                    <span><a href="https://github.com/Gen1usG/SomeDemo/tree/master/canvas-demo1 ">源码链接</a>
+                    <a href="https://gen1usg.github.io/SomeDemo/canvas-demo1/withCanvas.html ">效果预览</a></span>
 
+                </header>
+                <h4 style="font-weight: bold">简介：</h4>
+                <p>
+                    一个用<strong>Canvas</strong>实现的简单小画板，点击鼠标尝试画点什么吧。
+                </p>
+            </li>
+
+            <li class="page2">
+                <header>
+                    <h3>会动的皮卡丘</h3>
+                    <span>
+              <a href="https://github.com/Gen1usG/Pikachu">源码链接</a>
+              <a href="https://gen1usg.github.io/Pikachu/dist/index.html">项目预览</a>
+            </span>
+                </header>
+                <h4 style="font-weight: bold">简介：</h4>
+                <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品。</p>
+            </li>
+            <li>
+                <header>
+                    <h3>简易网页导航</h3>
+                    <span>
+              <a href="https://github.com/Gen1usG/Navigation">源码链接</a>
+              <a href="https://gen1usg.github.io/Navigation/dist/index.html">项目预览</a>
+            </span>
+                </header>
+                <h4 style="font-weight: bold">简介：</h4>
+                <p>这是一个简单的网页导航，能够实现<strong>百度搜索、添加网页、删除网页以及键盘跳转网页</strong>等功能</p>
+            </li>
+            <li>
+                <header>
+                    <h3>自己写的DOM库</h3>
+                    <span>
+              <a href="https://github.com/Gen1usG/DOMJQueryStyle">源码链接</a>
+            </span>
+                </header>
+                <h4 style="font-weight: bold">简介：</h4>
+                <p>仿jQuery操作风格，自己简单写的一套DOM库。</p>
+                <p>包括：获取元素、查询元素、获取子元素等功能，使用了重载的思想。</p>
+            </li>
+        </ul>
+    </section>
 
 
     <section class="jobs">
-      <h2>工作经历</h2>
-      <ol>
-        <li>
-          <header>
-            <h3> 彩云工作室 </h3>
-            <h4>全栈开发工程师（Ruby+JS）</h4>
-            <span><time>2017年1月</time>~<time>2018年1月</time></span>
-          </header>
-          <ul>
+        <h2>工作经历</h2>
+        <ol>
             <li>
-              独立负责 iPad 客户端的后台 <strong>Rails</strong> 开发和前端开发工作
+                <header>
+                    <h3> 思达数学 </h3>
+                    <h4>数学教师</h4>
+                    <span><time>2019年2月</time>~<time>2019年7月</time></span>
+                </header>
+                <ul>
+                    <li>
+                        负责初、高中数学教育，教研，以及学生和家长日常的沟通工作。
+                    </li>
+                </ul>
             </li>
-            <li>
-              负责团队基础库开发、单元测试、文档撰写，确保测试<strong>覆盖率达到 90%</strong> 以上
-            </li>
-            <li>
-              作为前端骨干，负责给前端较弱的同事进行培训，提高其前端开发工作效率
-            </li>
-          </ul>
-        </li>
-        <li>
-          <header>
-            <h3>哦外巴巴集团杭州总部</h3>
-            <h4>开发工程师</h4>
-            <span><time>2015年1月</time>~<time>2017年1月</time></span>
-          </header>
-          <ul>
-            <li>独立负责某 CRM 系统的开发与维护（后端使用Groovy，前端使用JS）</li>
-            <li>负责全部门 <strong>UI 框架的开发</strong>，包括对话框、<strong>树形组件</strong>、<strong>日期选择器</strong>等常用组件</li>
-            <li>定期组织内部分享，包括 Git 的使用、<strong>ES6 新特性</strong>、TypeScript 等话题</li>
-          </ul>
-        </li>
-      </ol>
+        </ol>
     </section>
 
-    <section class="others">
-      <h2>其他链接</h2>
-      <ul>
-        <li><a href="https://www.zhihu.com/people/zhihusucks/posts/posts_by_votes">我的博客</a>，目前已有 21 篇技术文章</li>
-        <li><a href="https://github.com/frankfang">我的 GitHub</a>，过去三个月有 200 次提交</li>
-      </ul>
-    </section>
 
-    <section class="education">
-      <h2>教育经历</h2>
-      <p>
-        <span><time>2008年</time>~<time>2012年</time></span>
-        关山口职业技术学校 软件学院 本科</p>
-    </section>
 
-  </article>
-  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
-  <script src="./main.js"></script>
+</article>
+<script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+<script src="./main.js"></script>
 </body>
 
 </html>
