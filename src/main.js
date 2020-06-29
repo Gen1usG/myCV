@@ -15,12 +15,12 @@ const option = {
             }
         },
         indicator: [
-            {name: 'html', max: 10},
-            {name: 'css', max: 10},
-            {name: 'Vue', max: 10},
-            {name: 'JS', max: 10},
-            {name: 'React', max: 10},
-            {name: '沟通能力', max: 10}
+            { name: 'html', max: 10 },
+            { name: 'css', max: 10 },
+            { name: 'Vue', max: 10 },
+            { name: 'JS', max: 10 },
+            { name: 'React', max: 10 },
+            { name: '沟通能力', max: 10 }
         ]
     },
     series: [{
@@ -28,7 +28,7 @@ const option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [9, 7, 8, 7, 4, 8],
+                value: [9, 7, 7, 8, 7, 8],
                 name: '能力雷达'
             }
         ]
