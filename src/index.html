@@ -36,6 +36,10 @@
         }
     </style>
     <style media="print">
+        #skills {
+            display: none;
+        }
+
         body {
             margin: 0;
         }
@@ -345,15 +349,23 @@
         <section class="skills">
             <h2>技能</h2>
             <div class="wrapper">
-                <div id="skills"></div>
+                <!-- <div id="skills"></div> -->
                 <ul>
-                    <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong></li>
-                    <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
-                    <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-                    <li>掌握<strong>React</strong>，包括 React组件，React Hooks</li>
-                    <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+                    <li>熟悉<strong>HTML+CSS</strong>页面制作技巧，能适用于语义化的标签将设计稿<strong>完美还原</strong></li>
+                    <li>熟悉<strong>JavaScript
+                            ES6</strong>技术，掌握包括：<strong>原型链、闭包、作用域链、DOM、this、AJAX、跨域、前端路由、AJAX、Promise、async、await、
+                            await、析构赋值</strong>等
+                    </li>
+                    <li>掌握Vue的使用，理解其重要概念：<strong>生命周期、响应式原理、computed、watch、slot</strong>。并掌握
+                        <strong>Vue全家桶</strong>的使用，包括
+                        <strong>VueCli、VueRouter、Vuex</strong>
+                        等</li>
+                    <li>掌握<strong>React</strong>，包括：<strong>虚拟DOM，React组件及通信，组件生命周期，React
+                            Hooks，自定义Hooks，React-Router</strong>等
+                    </li>
                     <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
                     <li>了解 <strong>Webpack 的配置和优化</strong></li>
+                    <li>了解 <strong>Git工作处理流程</strong></li>
                 </ul>
             </div>
         </section>
@@ -366,7 +378,7 @@
                         <h3>旺财记账</h3>
                         <span>
                             <a href="https://github.com/Gen1usG/Ledger">源码预览</a>
-                            <a href="https://gen1usg.github.io/ledger-website">项目预览</a>
+                            <a href="https://gen1usg.github.io/ledger-website/">项目预览</a>
                         </span>
                     </header>
                     <h4 style="font-weight: bold">简介：</h4>
@@ -379,14 +391,14 @@
                     </p>
                     <h4 style="font-weight: bold">项目细节：</h4>
 
-                    <p>整体使用<strong>Vue+Webpack+TypeScript</strong>构建项目。</p>
+                    <p>整体使用<strong>Vue+Vuex+Webpack+TypeScript</strong>构建项目。</p>
                     <p>使用<strong>SVG</strong>代替传统的幽灵图作为icons，并使用Webpack实现文件导入<strong>工程化</strong>。</p>
                     <p>使用<strong>Vue Router</strong>实现路由的跳转。</p>
-                    <p>使用<strong>VueX</strong>实现全局状态管理。</p>
+                    <p>使用<strong>Vuex</strong>实现全局状态管理。</p>
                     <p>使用<strong>mixins</strong>及<strong>单文件组件</strong>优化代码的可读性。</p>
 
                 </li>
-                <li>
+                <li class="break">
                     <header>
                         <h3>香蕉记账</h3>
                         <span>
@@ -400,18 +412,19 @@
                     </p>
 
                     <p>
-                        相比起上面的项目，这个项目除了使用的框架不同，在样式、功能细节上进行了大面积的修改。
+                        相比起上面的项目，这个项目除了使用的框架不同，在<strong>样式、功能细节上进行了大面积的修改</strong>，弥补了前一个项目的不足。
                     </p>
                     <h4 style="font-weight: bold">项目细节：</h4>
 
-                    <p>整体使用<strong>React+Webpack+styled-components+TypeScript+eCharts+Ant-Design</strong>构建项目。</p>
-                    <p>使用<strong>SVG</strong>代替传统的幽灵图作为icons，并利用Webpack实现文件导入<strong>工程化</strong>。</p>
+                    <p>整体使用<strong>TypeScript+React+Webpack+styled-components+dayjs+eCharts+Ant-Design</strong>构建项目。</p>
+                    <p>使用了<strong>Ant-Design</strong>中的组件，并进行了一些自定义修改。</p>
                     <p>使用<strong>React Router</strong>实现路由的跳转。</p>
+                    <p>使用<strong>dayjs</strong>对事件进行处理。</p>
                     <p>使用<strong>自定义Hooks</strong>实现全局状态管理。</p>
                     <p>使用<strong>eCharts</strong>实现数据可视化。</p>
 
                 </li>
-                <li class="break">
+                <!-- <li>
                     <header>
                         <h3>豆瓣APP</h3>
                         <span>
@@ -430,7 +443,7 @@
                     <p>使用模板及内容和属性替换实现节点的自动创建</p>
                     <p>通过已获取数据的数量，以及页面触底实现<strong>懒加载</strong>。</p>
                     <p>使用<strong>font-class</strong>引入图标，并通过<strong>css3 animation</strong>实现加载图标的动画。</p>
-                </li>
+                </li> -->
 
             </ol>
         </section>
@@ -502,16 +515,13 @@
                         <li>
                             负责初、高中数学教育，教研，以及学生和家长日常的沟通工作。
                         </li>
-                        <li>
+                        <!-- <li>
                             version:2.0
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
             </ol>
         </section>
-
-
-
     </article>
     <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
     <script src="./main.js"></script>
